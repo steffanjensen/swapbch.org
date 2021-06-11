@@ -20,4 +20,5 @@ Bchswap we be an universal swap.
 * ERC20 Token
 * Universal Token Swap
 * 100% open-source
-* NFT Swap
+* Game/NFT Marketplace
+* Stacking/Farming
