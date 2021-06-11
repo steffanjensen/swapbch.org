@@ -3,6 +3,7 @@
 ## STILL IN DEVELOPMENT!!
 
 ## Donations are always welcome:
+<img src="https://raw.githubusercontent.com/steffanjensen/bchswap/main/img/qr.png">
 bitcoincash:qrjt3r0ykx72z38r9lvmeka6apjumf2vw5ht6p4hsl
 
 All donations will be spent on security, servers and a graphic designer + development.
