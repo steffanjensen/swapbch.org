@@ -2,6 +2,13 @@
 
 ## STILL IN DEVELOPMENT!!
 
+## bchswap:
+* ERC20 Token
+* Universal Token Swap
+* 100% open-source
+* Game/NFT Marketplace
+* Stacking/Farming
+
 ## Donations are always welcome:
 <img src="https://raw.githubusercontent.com/steffanjensen/bchswap/main/img/qr.png">
 bitcoincash:qrjt3r0ykx72z38r9lvmeka6apjumf2vw5ht6p4hsl
@@ -14,11 +21,4 @@ https://steffanjensen.github.io/bchswap/
 
 
 
-Bchswap we be an universal swap.
-
-## bchswap:
-* ERC20 Token
-* Universal Token Swap
-* 100% open-source
-* Game/NFT Marketplace
-* Stacking/Farming
+Bchswap will be an universal swap.
