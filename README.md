@@ -5,5 +5,5 @@ STILL IN DEVELOPMENT!!
 Bitcoin Cash Swap for SmartBCH
 
 
-Demo (Remember to refresh page after metamask accep will be fixed)
+Demo (Remember to refresh page after metamask accept, will be fixed soon)
 https://steffanjensen.github.io/bchswap/
