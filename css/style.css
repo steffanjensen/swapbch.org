@@ -1,0 +1,171 @@
+.box{
+        position: center;
+    max-width: 480px;
+    width: 100%;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    box-shadow: rgba(0, 0, 0, 0.01) 0px 0px 1px, rgba(0, 0, 0, 0.04) 0px 4px 8px, rgba(0, 0, 0, 0.04) 0px 16px 24px, rgba(0, 0, 0, 0.01) 0px 24px 32px;
+    border-radius: 24px;
+    margin-top: 1rem;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.title-box {
+    padding: 1rem 1.25rem 0.5rem;
+    width: 100%;
+    color: rgb(86, 90, 105);
+}
+
+.swap-box {
+    display: grid;
+    grid-auto-rows: auto;
+    row-gap: 12px;
+}
+
+.swap-front {
+    position: relative;
+    padding: 8px;
+}
+
+.from {
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    border-radius: 20px;
+    background-color: rgb(237, 238, 242);
+    z-index: 1;
+    width: initial;
+}
+
+.swap-currency {
+    border-radius: 20px;
+    border: 1px solid rgb(237, 238, 242);
+    background-color: rgb(247, 248, 250);
+    width: initial;
+    box-sizing: border-box;
+}
+
+.wallet {
+    padding: 16px;
+    width: 100%;
+    text-align: center;
+    border-radius: 20px;
+    outline: currentcolor none medium;
+    border: 1px solid transparent;
+    text-decoration: none;
+    display: flex;
+    -moz-box-pack: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    -moz-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    will-change: transform;
+    transition: transform 450ms ease 0s;
+    transform: perspective(1px) translateZ(0px);
+    background-color: rgb(253, 234, 241);
+    color: rgb(255, 0, 122);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.swapinput {
+    display: flex;
+    flex-flow: row nowrap;
+    -moz-box-align: center;
+    align-items: center;
+    padding: 1rem 1rem 0.75rem;
+    box-sizing: border-box;
+}
+
+
+.select {
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    z-index: 1;
+    will-change: transform;
+    transition: transform 450ms ease 0s;
+    transform: perspective(1px) translateZ(0px);
+    -moz-box-align: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.075) 0px 6px 10px;
+    outline: currentcolor none medium;
+    cursor: pointer;
+    user-select: none;
+    border: medium none;
+    height: 2.4rem;
+    width: initial;
+    padding: 0px 8px;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    margin-right: 12px;
+    
+}
+
+.select_new {
+    display: flex;
+-moz-box-align: center;
+align-items: center;
+-moz-box-pack: justify;
+justify-content: space-between;
+width: 100%;
+}
+
+.currency_image {
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    display: flex;
+    padding: 0px;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: start;
+    justify-content: flex-start;
+    width: -moz-fit-content;
+
+}
+.currency_image2 {
+    width: 24px;
+height: 24px;
+box-shadow: rgba(0, 0, 0, 0.075) 0px 6px 10px;
+border-radius: 24px;
+}
+
+.textfont {
+    margin: 0px 0.25rem;
+    font-size: 18px;
+}
+
+.arrow {
+    margin: 0px 0.25rem 0px 0.35rem;
+    height: 35%;
+}
+
+.token-amount-input {
+    color: rgb(0, 0, 0);
+    width: 0px;
+    position: relative;
+    font-weight: 500;
+    outline: currentcolor none medium;
+    border: medium none;
+    flex: 1 1 auto;
+    background-color: rgb(247, 248, 250);
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0px;
+    appearance: textfield;
+    text-align: right;
+}
