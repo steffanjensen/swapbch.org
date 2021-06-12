@@ -82,33 +82,6 @@ font-weight: 500;
     left: calc(50% - 16px);
     z-index: 2;
 }
-    
- .enableMetamaskButton {
-    padding: 16px;
-    width: 100%;
-    text-align: center;
-    border-radius: 20px;
-    outline: currentcolor none medium;
-    border: 1px solid transparent;
-    text-decoration: none;
-    display: flex;
-    -moz-box-pack: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    -moz-box-align: center;
-    align-items: center;
-    cursor: pointer;
-    position: relative;
-    z-index: 1;
-    will-change: transform;
-    transition: transform 450ms ease 0s;
-    transform: perspective(1px) translateZ(0px);
-    background-color: rgb(253, 234, 241);
-    color: rgb(255, 0, 122);
-    font-size: 16px;
-    font-weight: 500;
-}
-    
 </style>
 </head>
 <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
@@ -222,17 +195,22 @@ async function getAccount() {
     const user_account = accounts[0];
     const account = user_account.substring(0, 6) + "..." + user_account.substring(38, 42);
     showAccount.innerHTML = account;
+    
 }
 
 async function getBalance() {
     var web3 = new Web3(new Web3.providers.HttpProvider('http://moeing.tech:8545'));
     web3.setProvider(new Web3.providers.WebsocketProvider('wss://smartbch-wss.greyh.at'));
-    var address = "0x72FcccAA6223FE66A64525eC038001d8aDD865E3";
-    const balance = await web3.eth.getBalance(address);
+
+    const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+    const user_account = accounts[0];
+
+    const balance = await web3.eth.getBalance(user_account);
     web3.utils.toWei(
         balance,
         'gwei'
     );
+    
     const user_balance = balance.substring(0, 2)
       showBalance.innerHTML = user_balance;
 }
