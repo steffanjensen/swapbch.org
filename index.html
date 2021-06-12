@@ -120,32 +120,7 @@ transition: background-position 0.1s ease 0s, box-shadow 0.1s ease 0s;
 </style>
 </head>
 <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
-<script>
 
-
-// Modern DApp Browsers
-if (window.ethereum) {
-   web3 = new Web3(window.ethereum);
-   try { 
-      window.ethereum.enable().then(function() {
-          
-          // User has allowed account access to DApp...
-      });
-   } catch(e) {
-      // User has denied account access to DApp...
-   }
-}
-// Legacy DApp Browsers
-else if (window.web3) {
-    web3 = new Web3(web3.currentProvider);
-    
-}
-// Non-DApp Browsers
-else {
-    alert('You have to install MetaMask !');
-}
-
-</script>
 <body>
     <div class="banner">
             <div class="underBanner">
@@ -225,13 +200,29 @@ const showAccount = document.querySelector('.showAccount');
 const showBalance = document.querySelector('.showBalance');
 
 
-window.onload = function() {
+// Modern DApp Browsers
+if (window.ethereum) {
+   web3 = new Web3(window.ethereum);
+   try { 
+      window.ethereum.enable().then(function() {
+          
+          // User has allowed account access to DApp...
     getAccount();
     getBalance();
-};
-
-
-
+      });
+   } catch(e) {
+      // User has denied account access to DApp...
+   }
+}
+// Legacy DApp Browsers
+else if (window.web3) {
+    web3 = new Web3(web3.currentProvider);
+    
+}
+// Non-DApp Browsers
+else {
+    alert('You have to install MetaMask !');
+}
 
 
 
