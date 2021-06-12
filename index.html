@@ -11,6 +11,7 @@
   
 }
 .bchBalance {
+
     font-family: 'Inter var',sans-serif;
     font-size: 12px;
     display: flex;
@@ -20,7 +21,6 @@
     background-color: rgb(237, 238, 242);
     border-radius: 12px;
     white-space: nowrap;
-    width: 20%;
     cursor: pointer;
     box-sizing: border-box;
     margin: 0px;
@@ -28,11 +28,12 @@
     padding-left: 0.75rem;
     font-weight: 500;
     padding-right: 0.5rem;
-    
+    float:left
 
 }
 
 .userAccount{
+ 
     font-family: 'Inter var',sans-serif;
     text-align: center;
 outline: currentcolor none medium;
@@ -47,7 +48,6 @@ transform: perspective(1px) translateZ(0px);
 font-size: 12px;
 display: flex;
 flex-flow: row nowrap;
-width: 100%;
 -moz-box-align: center;
 align-items: center;
 padding: 0.5rem;
@@ -61,6 +61,7 @@ font-weight: 500;
 }
 
 .showUseraccount {
+      display: inline-block;
     flex: 1 1 auto;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -81,6 +82,40 @@ font-weight: 500;
     margin-bottom: -14px;
     left: calc(50% - 16px);
     z-index: 2;
+}
+.banner{
+    box-sizing: border-box;
+    font-family: 'Inter var',sans-serif;
+}
+.underBanner{
+    display: grid;
+grid-template-columns: 120px 1fr 120px;
+-moz-box-pack: justify;
+justify-content: space-between;
+-moz-box-align: center;
+align-items: center;
+flex-direction: row;
+width: 100%;
+top: 0px;
+padding: 1rem;
+z-index: 21;
+position: relative;
+background-image: linear-gradient(transparent 50%, rgb(255, 255, 255) 50%);
+background-position: 0px 0px;
+background-size: 100% 200%;
+box-shadow: transparent 0px 0px 0px 1px;
+transition: background-position 0.1s ease 0s, box-shadow 0.1s ease 0s;
+}
+.rightBanner{
+    display: flex;
+    flex-direction: row;
+    -moz-box-align: center;
+    align-items: center;
+    justify-self: flex-end;
+
+}
+.container {
+  display: flex;
 }
 </style>
 </head>
@@ -112,15 +147,25 @@ else {
 
 </script>
 <body>
+    <div class="banner">
+            <div class="underBanner">
+
 <div class="textfont">
     BCHSWAP
+    </div>
+    <div class="container">
+    <div class="rightBanner">
     <div class="userWallet">
     <div class="bchBalance">
         <h2><span class="showBalance"></span> BCH</h2>
 </div>
-<div class="showUseraccount">
+<span class="showUseraccount">
     <div class="userAccount">
-<h2><span class="showAccount"></span></h2>
+<h2><div class="showAccount"></span></h2>
+    </div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -130,6 +175,7 @@ else {
 
 Swap
 </div>
+
 <div class="swap-front">
 
 <div class="swap-box" label="From">
@@ -210,7 +256,7 @@ async function getBalance() {
         balance,
         'gwei'
     );
-    
+
     const user_balance = balance.substring(0, 2)
       showBalance.innerHTML = user_balance;
 }
