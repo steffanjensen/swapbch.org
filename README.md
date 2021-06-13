@@ -15,7 +15,7 @@ bitcoincash:qzheflp8c8cwq2t8xun6w32sltkrzmu7wujnfn4aqd</br></br>
 
 All donations will be spent on security, servers and a graphic designer + development.
 
-### Demo (Remember to refresh page after metamask accept, will be fixed soon)
+### Demo:
 
 https://steffanjensen.github.io/bchswap/
 
