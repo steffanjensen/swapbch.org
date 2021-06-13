@@ -1,6 +1,6 @@
-# bchswap - Bitcoin Cash Swap with smartbch
+# Bitcoin Cash Swap with smartbch
 
-## STILL IN DEVELOPMENT!!
+## STILL UNDER DEVELOPMENT!!
 
 ## bchswap:
 * ERC20 Token
