@@ -1,9 +1,58 @@
 <html>
 </head>
-<title></title>
+<title>Bitcoin Cash Swap With SmartBCH</title>
 <link rel="stylesheet" href="css/style.css">
 
 <style>
+
+.showAccount {
+    -moz-box-align: center;
+    align-items: center;
+    border: 0px none;
+    border-radius: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    -moz-box-pack: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: currentcolor none 0px;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    height: 32px;
+    padding: 0px 16px;
+    background-color: rgb(239, 244, 245);
+    box-shadow: none;
+    color: rgb(31, 199, 212);
+}
+
+
+.showBalance {
+    -moz-box-align: center;
+    align-items: center;
+    border: 0px none;
+    border-radius: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    -moz-box-pack: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: currentcolor none 0px;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    height: 32px;
+    padding: 0px 16px;
+    background-color: rgb(239, 244, 245);
+    box-shadow: none;
+    color: rgb(31, 199, 212);
+}
 
 .userWallet{
     position: absolute;
@@ -131,15 +180,8 @@ transition: background-position 0.1s ease 0s, box-shadow 0.1s ease 0s;
     <div class="container">
     <div class="rightBanner">
     <div class="userWallet">
-    <div class="bchBalance">
-        <h2><span class="showBalance"></span> BCH</h2>
-</div>
-<span class="showUseraccount">
-    <div class="userAccount">
-<h2><div class="showAccount"></span></h2>
-    </div>
-</div>
-</div>
+     <div class="showBalance"></div>
+    <span class="showAccount"></span>
 </div>
 </div>
 </div>
@@ -249,7 +291,7 @@ async function getBalance() {
     );
 
     const user_balance = balance.substring(0, 2)
-      showBalance.innerHTML = user_balance;
+      showBalance.innerHTML = user_balance + " BCH";
 }
 
 
