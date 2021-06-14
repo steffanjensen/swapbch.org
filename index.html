@@ -1,6 +1,6 @@
 <html>
 </head>
-<title>Bitcoin Cash Swap With SmartBCH</title>
+<title></title>
 <link rel="stylesheet" href="css/style.css">
 
 <style>
@@ -290,7 +290,9 @@ async function getBalance() {
         'gwei'
     );
 
-    const user_balance = balance.substring(0, 2)
+
+    new_balance = balance.substring(0, 1) + "." + balance.substring(1, balance.length);
+    const user_balance = new_balance.substring(0, 6)
       showBalance.innerHTML = user_balance + " BCH";
 }
 
