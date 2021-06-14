@@ -5,6 +5,10 @@
 
 <style>
 
+:root{
+    font-family: 'Inter var',sans-serif;
+
+}
 .showAccount {
     -moz-box-align: center;
     align-items: center;
@@ -166,7 +170,150 @@ transition: background-position 0.1s ease 0s, box-shadow 0.1s ease 0s;
 .container {
   display: flex;
 }
+
+.outputBox {
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    border-radius: 20px;
+    background-color: rgb(237, 238, 242);
+    width: initial;
+    z-index: 1;
+}
+
+.outputBorder {
+    border-radius: 20px;
+    border: 1px solid rgb(237, 238, 242);
+    background-color: rgb(247, 248, 250);
+    width: initial;
+}
+
+.outputLine {
+    display: flex;
+    flex-flow: row nowrap;
+    -moz-box-align: center;
+    align-items: center;
+    padding: 1rem 1rem 0.75rem;
+}
+
+.selectToken {
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    z-index: 1;
+    will-change: transform;
+    transition: transform 450ms ease 0s;
+    transform: perspective(1px) translateZ(0px);
+    -moz-box-align: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+    background-color: rgb(255, 0, 122);
+    color: rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.075) 0px 6px 10px;
+    outline: currentcolor none medium;
+    cursor: pointer;
+    user-select: none;
+    border: medium none;
+    height: 2.4rem;
+    width: initial;
+    padding: 0px 8px;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    margin-right: 12px;
+}
+
+.selectTokentext {
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.selectTokentextfit {
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    display: flex;
+    padding: 0px;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: start;
+    justify-content: flex-start;
+    width: -moz-fit-content;
+}
+
+.tokenSymbol {
+    margin: 0px 0.25rem;
+    font-size: 18px;
+}
+
+.tokenArrow {
+    margin: 0px 0.25rem 0px 0.35rem;
+    height: 35%;
+}
+
+
+.tokenAmount {
+    color: rgb(0, 0, 0);
+    width: 0px;
+    position: relative;
+    font-weight: 500;
+    outline: currentcolor none medium;
+    border: medium none;
+    flex: 1 1 auto;
+    background-color: rgb(247, 248, 250);
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0px;
+    appearance: textfield;
+    text-align: right;
+}
+
+.tokenBoxcorner {
+    display: flex;
+    flex-flow: row nowrap;
+    -moz-box-align: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-size: 0.75rem;
+    line-height: 1rem;
+    padding: 0px 1rem 1rem;
+    -moz-box-pack: end;
+    justify-content: flex-end;
+}
+
+.tokenBoxdown {
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    width: 100%;
+    display: flex;
+    padding: 0px;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+}
+
+
+.tokenBoxdeci {
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    color: rgb(195, 197, 203);
+    font-size: 14px;
+    font-weight: 400;
+}
 </style>
+
 </head>
 <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
 
@@ -221,7 +368,11 @@ BCH</span></div>
 
 
 
-
+<div id="swap-currency-output" label="[object Object]" class="sc-33m4yg-0 outputBox"><div class="sc-33m4yg-2 outputBorder"><div class="sc-33m4yg-4 outputLine">
+<button class="selectToken"><span class="selectTokentext"><div class="selectTokentextfit"><span class="tokenSymbol">Select a token</span>
+</div><svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg" class="tokenArrow"><path d="M0.97168 1L6.20532 6L11.439 1" stroke="#AEAEAE"></path></svg></span></button>
+<input class="tokenAmount" inputmode="decimal" autocomplete="off" autocorrect="off" type="text" pattern="^[0-9]*[.,]?[0-9]*$" placeholder="0.0" minlength="1" maxlength="79" spellcheck="false" value="">
+</div><div class="tokenBoxcorner"><div class="tokenBoxdown"><span></span><div class="tokenBoxdeci"></div></div></div></div></div>
 
 
 
