@@ -2,7 +2,7 @@
 
 ## STILL UNDER DEVELOPMENT!!
 
-## bchswap:
+## swapbch.org:
 * ERC20 Token
 * Universal Token Swap
 * 100% open-source
