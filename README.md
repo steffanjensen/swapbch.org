@@ -17,8 +17,3 @@ All donations will be spent on security, servers and a graphic designer + develo
 
 ### Demo:
 
-https://swapbch.org
-
-
-
-Swapbch.org will be an universal swap..
