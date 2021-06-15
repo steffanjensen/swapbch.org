@@ -17,7 +17,7 @@ All donations will be spent on security, servers and a graphic designer + develo
 
 ### Demo:
 
-https://steffanjensen.github.io/bchswap/
+https://swapbch.org
 
 
 
