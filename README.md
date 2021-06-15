@@ -2,7 +2,7 @@
 
 ## STILL UNDER DEVELOPMENT!!
 
-## bchswap:
+## swapbch.org:
 * ERC20 Token
 * Universal Token Swap
 * 100% open-source
@@ -17,3 +17,4 @@ All donations will be spent on security, servers and a graphic designer + develo
 
 ### Demo:
 
+https://www.swapbch.org
